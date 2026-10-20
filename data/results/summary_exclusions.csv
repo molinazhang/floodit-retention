@@ -1,0 +1,6 @@
+step,n
+users with first_open in cohort window,3998
+first_open is first observed day,3986
++ first-touch timestamp consistent,3986
++ complete 7-day follow-up,3986
++ no coverage gap in window (eligible),3561

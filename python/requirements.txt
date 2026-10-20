@@ -1,0 +1,14 @@
+google-cloud-bigquery>=3.20
+google-cloud-bigquery-storage>=2.24
+pydata-google-auth>=1.8
+db-dtypes>=1.2
+pyarrow>=15
+pandas>=2.1
+numpy>=1.26
+scipy>=1.11
+statsmodels>=0.14
+scikit-learn>=1.4
+shap>=0.44
+matplotlib>=3.8
+pyyaml>=6
+tabulate>=0.9

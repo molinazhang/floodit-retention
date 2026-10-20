@@ -1,0 +1,7 @@
+step,label,n_users,share_of_cohort,share_of_previous
+first_open,Opened app (first_open),3561,1.0,1.0
+any_active,Any active event,3560,0.9997191800056164,0.9997191800056164
+started_level,Started a level,3097,0.8696995226060096,0.869943820224719
+completed_1,Completed 1+ level,2117,0.5944959281100815,0.6835647400710365
+completed_3,Completed 3+ levels,1343,0.37714125245717495,0.6343882853094001
+completed_5,Completed 5+ levels,930,0.2611625947767481,0.6924795234549516

@@ -1,0 +1,17 @@
+metric,value
+n_distinct_user_id,0.0
+n_distinct_user_pseudo_id,15175.0
+n_events,5700000.0
+n_users_multiple_first_touch_values,0.0
+n_users_multiple_platforms,0.0
+share_app_version_placeholder,0.0
+share_country_placeholder,0.0009
+share_device_category_placeholder,0.0
+share_events_first_touch_null,0.0
+share_events_platform_android,0.5319
+share_events_platform_ios,0.4681
+share_events_platform_other,0.0
+share_events_pseudo_id_null_or_empty,0.0
+share_events_user_id_null,1.0
+share_os_placeholder,0.0592
+share_traffic_source_placeholder,0.7532
