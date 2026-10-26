@@ -1,0 +1,4 @@
+platform,step0_first_open,step1_any_active_event,step2_started_level,step3_completed_1_level,step4_completed_3_levels,step5_completed_5_levels,n_failed_any_level,n_used_extra_steps,n_ad_reward,n_app_removed_d0
+,3561,3560,3097,2117,1343,930,1627,699,60,723
+ANDROID,2418,2417,2045,1470,1001,701,981,385,37,723
+IOS,1143,1143,1052,647,342,229,646,314,23,0

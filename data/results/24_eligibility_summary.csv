@@ -1,0 +1,10 @@
+step,n_users
+all_users_with_first_open,4319
+in_cohort_window,3998
+... and first_open_is_first_seen,3986
+... and first_touch_consistent,3986
+... and complete_followup,3986
+... and window_coverage_ok (= eligible),3561
+eligible: exploratory phase,1256
+eligible: validation phase,2305
+eligible: users with >1 first_open date,0

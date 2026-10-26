@@ -1,0 +1,6 @@
+user_type,first_touch_check,n_users,n_users_multiple_first_open_dates,avg_first_open_events
+1_no_first_open_in_extract (pre-existing or unexported),first_touch_before_extract,9074,0,0.0
+1_no_first_open_in_extract (pre-existing or unexported),first_touch_other,1782,0,0.0
+2_first_open_on_first_seen_day (new user),first_touch_equals_first_open,2974,0,1.001
+2_first_open_on_first_seen_day (new user),first_touch_within_1_day_of_first_open,1333,0,1.0
+3_first_open_after_first_seen_day (suspicious),first_touch_before_extract,12,1,1.083

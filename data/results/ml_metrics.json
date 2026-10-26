@@ -1,0 +1,24 @@
+{
+  "n_train": 1256,
+  "n_valid": 2305,
+  "prevalence_train": 0.0732484076433121,
+  "prevalence_valid": 0.04338394793926247,
+  "synthetic": false,
+  "baseline_prevalence": {
+    "log_loss": 0.1861707621746065,
+    "brier": 0.04239366695388064
+  },
+  "logistic_l2": {
+    "auc": 0.6493560090702948,
+    "avg_precision": 0.06938618814743573,
+    "log_loss": 0.18986390322991303,
+    "brier": 0.046454793797691886
+  },
+  "hist_gradient_boosting": {
+    "auc": 0.6477392290249433,
+    "avg_precision": 0.07618200805829509,
+    "log_loss": 0.18148286474874098,
+    "brier": 0.042685324954861575
+  },
+  "shap": "ok"
+}

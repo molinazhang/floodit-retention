@@ -1,0 +1,28 @@
+# Project configuration. Edit the first two values after creating your BigQuery sandbox project.
+# Placeholders in the SQL files ({{PROJECT}}, {{DATASET}}, ...) are filled from this file by python/run_sql.py.
+
+gcp_project: "YOUR_SANDBOX_PROJECT_ID"     # e.g. floodit-retention-123456  (sandbox, no billing)
+dataset: "floodit_retention"               # created in your project by run_sql.py if missing (sandbox tables expire after 60 days)
+
+# Source: Google's public Flood-It! demo export (read-only).
+source_table: "firebase-public-project.analytics_153293282.events_*"
+
+# Extract window as table suffixes (YYYYMMDD). Google documents 114 days ending at events_20181003.
+# The start value below is a working assumption; run sql/00_audit/01_tables_and_dates.sql and
+# correct it to the first table that actually exists before building anything.
+extract_start_suffix: "20180612"
+extract_end_suffix:   "20181003"
+
+# Cohort window (calendar dates, in the export's reporting timezone; see docs/metric_definitions.md).
+# A cohort is "complete" only if cohort_date + 7 days <= last extract date, so the last usable
+# cohort is extract_end - 7 days.
+cohort_start: "2018-06-12"
+cohort_end:   "2018-09-26"
+
+# Split used to separate exploratory from validation findings (temporal holdout).
+# Behavior groups and the recommendation are chosen on cohorts <= exploratory_end,
+# then re-estimated on later cohorts without changes.
+exploratory_end: "2018-08-03"
+
+# Safety: run_sql.py refuses to execute a query whose dry-run estimate exceeds this (bytes).
+max_bytes_per_query: 20000000000   # 20 GB
