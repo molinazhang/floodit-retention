@@ -7,16 +7,14 @@ experiment proposal at the end.
 **Data.** Google's public Flood-It! event export
 (`firebase-public-project.analytics_153293282.events_*`): 114 daily tables of obfuscated
 Firebase/GA4 events ending 2018-10-03
-([docs](https://developers.google.com/analytics/bigquery/app-gaming-demo-dataset)). Google
-says the fields are obfuscated and internal consistency "might be somewhat limited". The audit
-stage measures how much.
+([docs](https://developers.google.com/analytics/bigquery/app-gaming-demo-dataset))
 
 ## Results
 
 Executed on a free BigQuery sandbox. Every query and its billed bytes are in
-`data/results/query_log.csv` (about 11 GB scanned, re-runs included).
+`data/results/query_log.csv` (about 11 GB scanned, re-runs included)
 
-Eligible new users: 3,561, cohorts 2018-07-02 to 2018-09-26.
+Eligible new users: 3,561, cohorts 2018-07-02 to 2018-09-26
 
 | Metric | Value |
 |---|---|
@@ -32,10 +30,10 @@ is associated with lower rentention. A quarter of installs never reach a first-l
 on day 0 and return at about 2%; most of them saw only the main menu. 
 Recommendation: auto-start the first level at first open and test
 it. The experiment needs 8,689 users per arm to detect a 1 pp lift. Details in
-`docs/product_memo.md` and `docs/experiment_proposal.md`.
+`docs/product_memo.md` and `docs/experiment_proposal.md`
 
 Figures: `figures/fig1_funnel.png`, `fig2_retention_by_cohort.png`, `fig3_behavior_groups.png`,
-plus `ml_*.png` for the secondary model. Numbers: `data/results/results.md`.
+plus `ml_*.png` for the secondary model. Numbers: `data/results/results.md`
 
 ## Caveats you should know before quoting anything
 
@@ -50,7 +48,7 @@ plus `ml_*.png` for the secondary model. Numbers: `data/results/results.md`.
 
 ## Reproducing the results
 
-There are two options to reproduce the results.
+There are two options to reproduce the results: 
 
 **Python (You don't need a Google account).** The user-level export `data/results/25_user_level.csv`
 (3,998 rows, one per new install) is committed. This regenerates the figures, `results.md`,
