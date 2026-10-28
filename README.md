@@ -35,7 +35,7 @@ it. The experiment needs 8,689 users per arm to detect a 1 pp lift. Details in
 Figures: `figures/fig1_funnel.png`, `fig2_retention_by_cohort.png`, `fig3_behavior_groups.png`,
 plus `ml_*.png` for the secondary model. Numbers: `data/results/results.md`
 
-## Caveats you should know before quoting anything
+## Caveats
 
 * The export is capped at 50,000 events per day (~470 users/day). Absolute retention
   is understated and group gaps are biased upward if heavier players are more likely to be
